@@ -1,0 +1,441 @@
+{
+  "model": "gpt-4o-mini",
+  "count": 20,
+  "schema": {
+    "properties": {
+      "title": {
+        "maxLength": 80,
+        "title": "Title",
+        "type": "string"
+      },
+      "audience": {
+        "enum": [
+          "developer",
+          "end-user",
+          "admin"
+        ],
+        "title": "Audience",
+        "type": "string"
+      },
+      "summary": {
+        "maxLength": 400,
+        "minLength": 40,
+        "title": "Summary",
+        "type": "string"
+      },
+      "changes": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 8,
+        "minItems": 2,
+        "title": "Changes",
+        "type": "array"
+      },
+      "breaking": {
+        "title": "Breaking",
+        "type": "boolean"
+      },
+      "citations": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Citations",
+        "type": "array"
+      }
+    },
+    "required": [
+      "title",
+      "audience",
+      "summary",
+      "changes",
+      "breaking",
+      "citations"
+    ],
+    "title": "ReleaseNote",
+    "type": "object"
+  },
+  "notes": [
+    {
+      "title": "CSV Export Feature for Filtered Reports",
+      "audience": "end-user",
+      "summary": "We are excited to announce the addition of a new feature that allows users to export filtered reports directly from the dashboard in CSV format. This enhancement aims to streamline data analysis and reporting processes for our users.",
+      "changes": [
+        "Introduced the ability to export filtered reports as CSV.",
+        "Added a new export button on the dashboard for easy access.",
+        "Implemented options to customize the data included in the CSV export.",
+        "Enhanced user interface to support the new export functionality.",
+        "Updated documentation to reflect the new CSV export feature."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from the last survey indicated a strong demand for CSV export functionality.",
+        "Market research showing the importance of data export features in analytics tools."
+      ]
+    },
+    {
+      "title": "New Pagination Feature for Activity Endpoint",
+      "audience": "developer",
+      "summary": "We are excited to announce the addition of pagination to the activity endpoint. This enhancement allows developers to retrieve activities in a more manageable way, improving performance and usability when dealing with large datasets.",
+      "changes": [
+        "Implemented pagination for the activity endpoint.",
+        "Introduced 'page' and 'limit' query parameters to control the number of results returned.",
+        "Updated API documentation to reflect the new pagination feature.",
+        "Enhanced error handling for invalid pagination requests.",
+        "Optimized database queries to support efficient pagination.",
+        "Added examples in the documentation for using pagination.",
+        "Conducted performance testing to ensure stability with large datasets.",
+        "Updated client libraries to support the new pagination feature."
+      ],
+      "breaking": false,
+      "citations": [
+        "API Documentation v2.1",
+        "User Feedback Report Q3 2023"
+      ]
+    },
+    {
+      "title": "Session Timeout Configuration Update",
+      "audience": "admin",
+      "summary": "Administrators can now configure session timeout settings to enhance security and user experience. This feature allows for greater control over user sessions, ensuring that inactive sessions are automatically logged out after a specified period.",
+      "changes": [
+        "Introduced a new settings option for session timeout configuration.",
+        "Enabled administrators to set custom timeout durations.",
+        "Added validation for timeout duration input.",
+        "Updated user interface to reflect new session timeout settings.",
+        "Improved documentation on session management.",
+        "Implemented notifications for users prior to session expiration.",
+        "Enhanced security measures for session handling.",
+        "Conducted user testing to ensure feature effectiveness."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from the admin panel.",
+        "Security best practices documentation."
+      ]
+    },
+    {
+      "title": "Offline Viewing Feature Released",
+      "audience": "end-user",
+      "summary": "We are excited to announce the addition of offline viewing for saved articles in our mobile app. This feature allows users to access their favorite content anytime, anywhere, without the need for an internet connection. Simply save your articles and enjoy reading them on the go!",
+      "changes": [
+        "Introduced offline viewing for saved articles.",
+        "Users can now download articles for later access.",
+        "Improved user interface for managing saved articles.",
+        "Added a notification for successful downloads.",
+        "Enhanced performance for loading saved content.",
+        "Fixed bugs related to article saving.",
+        "Updated help section to include offline viewing instructions.",
+        "Optimized storage management for downloaded articles."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from beta testing.",
+        "Market research on offline content consumption."
+      ]
+    },
+    {
+      "title": "Enhanced Search Functionality with Exact Match Support",
+      "audience": "end-user",
+      "summary": "We are excited to announce that the search page now supports quoted exact-match searches, allowing users to find results that match their queries precisely. This enhancement improves the search experience by delivering more relevant results for specific queries.",
+      "changes": [
+        "Introduced support for quoted exact-match searches.",
+        "Improved search algorithm to prioritize exact matches.",
+        "Updated user interface to highlight exact match results.",
+        "Enhanced documentation to guide users on using exact match searches.",
+        "Fixed minor bugs related to search result display.",
+        "Optimized performance for faster search results."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback on search functionality",
+        "Internal testing results",
+        "Industry best practices for search optimization"
+      ]
+    },
+    {
+      "title": "New Downloadable Invoices Feature",
+      "audience": "end-user",
+      "summary": "We are excited to announce the release of a new feature on the billing page that allows users to download their invoices directly. This enhancement aims to improve user experience by providing easy access to billing documents in a convenient format.",
+      "changes": [
+        "Added a 'Download Invoice' button on the billing page.",
+        "Invoices can now be downloaded in PDF format.",
+        "Improved layout for better visibility of invoice details.",
+        "Users can select the date range for invoices to download.",
+        "Implemented a confirmation message after successful download.",
+        "Enhanced security measures for invoice downloads."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback survey conducted in September 2023.",
+        "Internal testing results from the development team."
+      ]
+    },
+    {
+      "title": "Configurable Email Preferences for Notification System",
+      "audience": "end-user",
+      "summary": "We are excited to announce the addition of configurable email preferences to our notification system. Users can now customize their email notifications based on their preferences, ensuring they receive only the information that matters most to them. This enhancement aims to improve user experience and engagement.",
+      "changes": [
+        "Introduced a new settings page for email preferences.",
+        "Users can opt-in or opt-out of specific notification types.",
+        "Added a preview feature for email notifications.",
+        "Implemented a feedback mechanism for users to report issues with notifications.",
+        "Enhanced security measures for email preference settings.",
+        "Updated user documentation to reflect new features.",
+        "Improved performance of the notification delivery system.",
+        "Fixed bugs related to email notification delivery."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback surveys",
+        "Internal testing results",
+        "Industry best practices for notification systems"
+      ]
+    },
+    {
+      "title": "Automatic Draft Restoration Feature",
+      "audience": "end-user",
+      "summary": "We are excited to announce a new feature in our editor that automatically restores the last saved draft. This enhancement ensures that users can seamlessly continue their work without the fear of losing progress, making the editing experience smoother and more efficient.",
+      "changes": [
+        "Introduced automatic restoration of the last saved draft upon reopening the editor.",
+        "Enhanced user experience by reducing the risk of data loss.",
+        "Improved performance of the editor during draft recovery.",
+        "Added visual indicators for restored drafts to inform users.",
+        "Updated documentation to reflect the new automatic restoration feature.",
+        "Conducted user testing to ensure reliability and effectiveness of the feature.",
+        "Fixed minor bugs related to draft saving and restoration.",
+        "Optimized the editor's loading time after restoring drafts."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from beta testing.",
+        "Internal testing reports.",
+        "Documentation updates."
+      ]
+    },
+    {
+      "title": "New Health Endpoint for Service Monitoring",
+      "audience": "developer",
+      "summary": "We are excited to announce the addition of a new health endpoint to our API, designed to enhance service monitoring capabilities. This endpoint provides real-time health status of the service, allowing developers to implement more robust monitoring solutions.",
+      "changes": [
+        "Introduced a new '/health' endpoint for checking service status.",
+        "The endpoint returns a JSON response indicating the health of the service.",
+        "Added documentation for the new health endpoint in the API reference.",
+        "Implemented response codes for different health statuses.",
+        "Enhanced logging for health checks to improve troubleshooting.",
+        "Updated API versioning to reflect the addition of the health endpoint.",
+        "Conducted performance testing to ensure minimal impact on service.",
+        "Included examples of how to use the health endpoint in various programming languages."
+      ],
+      "breaking": false,
+      "citations": [
+        "API Documentation: https://api.example.com/docs",
+        "Performance Testing Report: https://api.example.com/performance"
+      ]
+    },
+    {
+      "title": "Project Archiving Feature Release",
+      "audience": "end-user",
+      "summary": "We are excited to introduce a new feature that allows users to archive old projects directly from the project menu. This enhancement will help users manage their project lists more effectively and keep their workspace organized.",
+      "changes": [
+        "Added 'Archive' option in the project menu.",
+        "Users can now select multiple projects to archive at once.",
+        "Archived projects can be easily restored if needed.",
+        "Improved user interface for better navigation.",
+        "Updated documentation to include archiving instructions.",
+        "Notifications will be sent when projects are archived.",
+        "Performance improvements for loading project lists.",
+        "Bug fixes related to project management."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from the last survey indicated a need for project management improvements.",
+        "Competitive analysis showed that archiving features are standard in similar tools."
+      ]
+    },
+    {
+      "title": "New User Activity Audit View in Admin Console",
+      "audience": "admin",
+      "summary": "We are excited to announce the addition of a user activity audit view in the admin console. This feature allows administrators to monitor user actions and enhance security by providing detailed insights into user activities within the system.",
+      "changes": [
+        "Introduced a new user activity audit view accessible from the admin console.",
+        "Enabled filtering options to view specific user activities based on date and user.",
+        "Added export functionality to download audit logs in CSV format.",
+        "Implemented real-time updates to the audit view for immediate visibility of user actions.",
+        "Enhanced search capabilities to quickly locate specific activities.",
+        "Improved UI for better navigation and user experience.",
+        "Included detailed descriptions of user actions for clarity.",
+        "Provided documentation and best practices for utilizing the audit view effectively."
+      ],
+      "breaking": false,
+      "citations": [
+        "User Activity Audit Documentation: https://example.com/audit-docs",
+        "Admin Console Release Notes: https://example.com/release-notes"
+      ]
+    },
+    {
+      "title": "New Multi-File Upload Helper Added to SDK",
+      "audience": "developer",
+      "summary": "We are excited to announce the addition of a new helper function in our SDK that simplifies the process of uploading multiple files at once. This enhancement aims to improve developer efficiency and streamline file management in applications.",
+      "changes": [
+        "Introduced a new helper function for multi-file uploads.",
+        "Updated documentation to include examples of the new functionality.",
+        "Improved error handling for file upload processes.",
+        "Optimized performance for handling larger file sets.",
+        "Added unit tests to ensure reliability of the new feature.",
+        "Enhanced user feedback during the upload process."
+      ],
+      "breaking": false,
+      "citations": [
+        "SDK Documentation",
+        "User Feedback Reports",
+        "Performance Benchmarking Results"
+      ]
+    },
+    {
+      "title": "Enhanced Reports Page with Date-Range Filtering",
+      "audience": "end-user",
+      "summary": "We are excited to announce the addition of date-range filtering on the reports page. This new feature allows users to easily customize their report views by selecting specific date ranges, making data analysis more efficient and tailored to individual needs.",
+      "changes": [
+        "Introduced date-range filtering functionality on the reports page.",
+        "Users can now select start and end dates to refine their report data.",
+        "Improved user interface for selecting date ranges.",
+        "Enhanced performance for loading reports based on selected date ranges.",
+        "Added tooltips for better guidance on using the date-range filter.",
+        "Updated documentation to include instructions on using the new feature."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from beta testing phase.",
+        "Internal usability studies conducted in Q3 2023."
+      ]
+    },
+    {
+      "title": "Enhanced Keyboard Shortcuts for Improved Productivity",
+      "audience": "end-user",
+      "summary": "This release introduces a set of new keyboard shortcuts designed to streamline common actions within the application. Users can now navigate and execute tasks more efficiently, enhancing overall productivity and user experience.",
+      "changes": [
+        "Added keyboard shortcuts for 'Copy' and 'Paste' actions.",
+        "Introduced shortcuts for 'Undo' and 'Redo' functionalities.",
+        "Implemented a customizable shortcut feature for user-defined actions.",
+        "Enhanced accessibility by adding shortcuts for screen reader navigation.",
+        "Updated documentation to include new shortcut keys.",
+        "Fixed bugs related to shortcut conflicts in various modules."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from the last survey indicated a demand for more shortcuts.",
+        "Research on productivity improvements through keyboard shortcuts."
+      ]
+    },
+    {
+      "title": "Team Page Role Descriptions Update",
+      "audience": "admin",
+      "summary": "We have enhanced the team page by adding detailed role descriptions next to each permission. This update aims to provide clearer guidance on the responsibilities associated with each role, improving user understanding and management of permissions.",
+      "changes": [
+        "Added role descriptions beside each permission on the team page.",
+        "Updated UI to accommodate the new role descriptions for better visibility."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from team management sessions.",
+        "Internal review of permission management best practices."
+      ]
+    },
+    {
+      "title": "Enhanced Password Reset Guidance in Login Flow",
+      "audience": "end-user",
+      "summary": "We have improved the login flow by adding clearer guidance for password resets. This enhancement aims to streamline the user experience and reduce confusion during the login process, ensuring users can easily recover their accounts.",
+      "changes": [
+        "Introduced step-by-step instructions for password reset.",
+        "Added visual cues to guide users through the reset process.",
+        "Updated error messages to provide more context on failed login attempts.",
+        "Implemented a confirmation email for successful password resets.",
+        "Enhanced mobile responsiveness of the password reset interface.",
+        "Included links to support resources for further assistance."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from recent surveys indicated confusion during password resets.",
+        "Industry best practices recommend clearer guidance for user authentication processes."
+      ]
+    },
+    {
+      "title": "New Language Selection Control Added",
+      "audience": "end-user",
+      "summary": "We are excited to announce the addition of a language selection control on the settings page. This feature allows users to easily switch between different languages, enhancing accessibility and user experience. Users can now navigate the application in their preferred language, making it more user-friendly for a diverse audience.",
+      "changes": [
+        "Introduced a language selection dropdown on the settings page.",
+        "Added support for multiple languages including Spanish, French, and German.",
+        "Updated the user interface to accommodate the new language selection feature.",
+        "Implemented language persistence across sessions.",
+        "Enhanced localization for improved translations.",
+        "Conducted user testing to ensure functionality and usability.",
+        "Updated documentation to reflect the new language options.",
+        "Fixed minor bugs related to language display."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from beta testing",
+        "Localization team reports",
+        "UI/UX design guidelines"
+      ]
+    },
+    {
+      "title": "API Documentation Update: Authentication Error Examples",
+      "audience": "developer",
+      "summary": "This release enhances the API documentation by adding detailed examples for common authentication errors. Developers can now better understand how to handle these errors effectively in their applications.",
+      "changes": [
+        "Added examples for 401 Unauthorized error handling.",
+        "Included scenarios for 403 Forbidden error responses.",
+        "Provided sample code snippets for each authentication error.",
+        "Updated error message descriptions for clarity.",
+        "Improved formatting of the documentation for better readability.",
+        "Added links to relevant sections for quick navigation."
+      ],
+      "breaking": false,
+      "citations": [
+        "API Documentation Guidelines",
+        "Authentication Best Practices"
+      ]
+    },
+    {
+      "title": "New Duplicate-Project Action in Workspace",
+      "audience": "admin",
+      "summary": "We are excited to announce the addition of a new duplicate-project action in the workspace. This feature allows users to easily create a copy of an existing project, streamlining project management and enhancing productivity. The duplicate-project action is designed to save time and reduce errors when setting up similar projects.",
+      "changes": [
+        "Introduced a new action to duplicate existing projects.",
+        "Enhanced user interface to support project duplication.",
+        "Updated documentation to include instructions for using the duplicate-project feature.",
+        "Implemented validation checks to ensure data integrity during duplication.",
+        "Added user feedback mechanisms for successful project duplication.",
+        "Improved performance of the workspace when handling multiple projects."
+      ],
+      "breaking": false,
+      "citations": [
+        "Workspace User Guide v2.1",
+        "Project Management Best Practices"
+      ]
+    },
+    {
+      "title": "Enhanced Notification Center Grouping",
+      "audience": "end-user",
+      "summary": "We have improved the notification center by introducing a new feature that groups related alerts together. This enhancement aims to streamline user experience by reducing clutter and making it easier to manage notifications.",
+      "changes": [
+        "Implemented grouping of related alerts in the notification center.",
+        "Introduced visual indicators for grouped notifications.",
+        "Added a toggle option to expand or collapse grouped alerts.",
+        "Improved performance of the notification center when displaying multiple alerts.",
+        "Updated user interface to accommodate the new grouping feature.",
+        "Enhanced accessibility features for better navigation of grouped alerts.",
+        "Provided user guidance on how to utilize the new grouping functionality.",
+        "Fixed minor bugs related to notification display."
+      ],
+      "breaking": false,
+      "citations": [
+        "User feedback from beta testing.",
+        "Internal usability studies.",
+        "Industry best practices for notification management."
+      ]
+    }
+  ]
+}

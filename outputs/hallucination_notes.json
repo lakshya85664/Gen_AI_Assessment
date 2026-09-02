@@ -1,0 +1,887 @@
+[
+  {
+    "topic": "CSV export",
+    "request": "Prepare a release note about exporting filtered report results.",
+    "retrieved_source_ids": [
+      "DOC-01",
+      "DOC-21",
+      "DOC-13"
+    ],
+    "before_note": {
+      "title": "Filtered Report Results Export Feature",
+      "audience": "end-user",
+      "summary": "We are excited to announce the new feature that allows users to export filtered report results directly from the reports page.",
+      "changes": [
+        "The reports page now supports CSV export for the currently applied filters.",
+        "Exported files are encoded in UTF-8 and include the column headers displayed by the report.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Exporting Filtered Report Results",
+      "audience": "end-user",
+      "summary": "This release introduces enhancements to the reporting feature, allowing users to export filtered results.",
+      "changes": [
+        "The reports page now supports CSV export for the currently applied filters, including only the filtered rows shown in the report [DOC-01].",
+        "The CSV export uses UTF-8 encoding and includes the column headers displayed by the report [DOC-21].",
+        "Reports support filtering by a start date and end date, with the selected date range applied before results are displayed [DOC-13]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Report Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing",
+        "feedback_sent_to_next_attempt": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Report Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Users of the reporting feature', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Users of the reporting feature', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "API pagination",
+    "request": "Prepare a developer release note about paginating activity API results.",
+    "retrieved_source_ids": [
+      "DOC-22",
+      "DOC-02",
+      "DOC-13"
+    ],
+    "before_note": {
+      "title": "Activity API Pagination Enhancement",
+      "audience": "developer",
+      "summary": "The Activity API has been enhanced to support pagination, allowing developers to retrieve results in a more manageable format.",
+      "changes": [
+        "The Activity API now accepts 'page' and 'page_size' parameters for pagination.",
+        "A default 'page_size' of 50 is set, with a maximum limit of 200.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Activity API Pagination Update",
+      "audience": "developer",
+      "summary": "This release introduces pagination support for the activity API, enhancing the way results are retrieved.",
+      "changes": [
+        "The activity API now accepts page and page_size parameters, with a default page_size of 50 and a maximum of 200 [DOC-02].",
+        "The activity API returns a next_page value when more records are available after the current page [DOC-22].",
+        "Reports can now filter results by a specified start date and end date [DOC-13]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Session timeout",
+    "request": "Prepare an admin release note about configurable session timeouts.",
+    "retrieved_source_ids": [
+      "DOC-03",
+      "DOC-23",
+      "DOC-01"
+    ],
+    "before_note": {
+      "title": "Configurable Session Timeouts",
+      "audience": "admin",
+      "summary": "Administrators can now customize session timeout durations to enhance security and user experience.",
+      "changes": [
+        "Session timeout values can now be configured from 15 to 120 minutes in the security settings.",
+        "Changes to session timeout settings will apply to all new sessions after saving the configuration.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Configurable Session Timeouts",
+      "audience": "admin",
+      "summary": "This release introduces the ability to configure session timeouts for enhanced security management.",
+      "changes": [
+        "Administrators can configure session timeout values from 15 to 120 minutes in the security settings. [DOC-03]",
+        "Session timeout changes apply to new sessions after the administrator saves the security setting. [DOC-23]",
+        "The reports page now supports CSV export for the currently applied filters. [DOC-01]"
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Offline viewing",
+    "request": "Prepare an end-user release note about viewing project content offline.",
+    "retrieved_source_ids": [
+      "DOC-04",
+      "DOC-24",
+      "DOC-19"
+    ],
+    "before_note": {
+      "title": "Offline Viewing of Project Content",
+      "audience": "end-user",
+      "summary": "We are excited to introduce the ability for mobile users to download selected project content for offline viewing. This feature enhances productivity by allowing users to access important information even without an internet connection.",
+      "changes": [
+        "Mobile users can now download selected project content for offline viewing.",
+        "Offline project content is read-only until the device reconnects and synchronization is completed.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Offline Viewing of Project Content",
+      "audience": "end-user",
+      "summary": "This release introduces the ability to view project content offline, enhancing user accessibility and flexibility.",
+      "changes": [
+        "Mobile users can download selected project content for offline viewing [DOC-04].",
+        "Offline project content is read-only until the device reconnects and synchronization is completed [DOC-24].",
+        "Changes made offline are synchronized after the device reconnects [DOC-04]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing",
+        "feedback_sent_to_next_attempt": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='None', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Exact search",
+    "request": "Prepare an end-user release note about exact phrase search.",
+    "retrieved_source_ids": [
+      "DOC-05",
+      "DOC-11",
+      "DOC-14"
+    ],
+    "before_note": {
+      "title": "Exact Phrase Search Enhancement",
+      "audience": "end-user",
+      "summary": "We are excited to introduce a new feature that enhances the search functionality by allowing users to perform exact phrase searches. This improvement makes it easier to find specific content quickly and accurately.",
+      "changes": [
+        "Search now supports exact phrase matching when a query is enclosed in quotation marks.",
+        "Improved search accuracy for queries with multiple words.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Exact Phrase Search Enhancement",
+      "audience": "end-user",
+      "summary": "This release introduces improvements to the search functionality.",
+      "changes": [
+        "Search now supports exact phrase matching when a query is enclosed in quotation marks [DOC-05].",
+        "Administrators can view user activity in the Audit page, including the actor, action, and timestamp [DOC-11].",
+        "Keyboard shortcuts are available for opening search, saving edits, and moving between common navigation areas [DOC-14]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Invoices",
+    "request": "Prepare an end-user release note about downloading monthly billing invoices.",
+    "retrieved_source_ids": [
+      "DOC-06",
+      "DOC-11",
+      "DOC-13"
+    ],
+    "before_note": {
+      "title": "Monthly Billing Invoices Download Feature",
+      "audience": "end-user",
+      "summary": "We are excited to announce a new feature that allows billing users to easily download their monthly invoices in PDF format directly from the billing history page.",
+      "changes": [
+        "Billing users can now download their monthly invoices as PDF files.",
+        "The download option is accessible from the billing history page for improved user experience.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Monthly Billing Invoices Download",
+      "audience": "end-user",
+      "summary": "This release introduces the ability to download monthly billing invoices.",
+      "changes": [
+        "Billing users can now download monthly invoices as PDF files from the billing history page [DOC-06].",
+        "The feature enhances user experience by providing easy access to billing documents [DOC-06].",
+        "Users can retrieve their invoices for better financial tracking and record-keeping [DOC-06]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Billing Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Billing Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Email preferences",
+    "request": "Prepare an end-user release note about configurable email notifications.",
+    "retrieved_source_ids": [
+      "DOC-11",
+      "DOC-20",
+      "DOC-07"
+    ],
+    "before_note": {
+      "title": "Configurable Email Notifications Released",
+      "audience": "end-user",
+      "summary": "We are excited to introduce configurable email notifications, allowing you to customize which categories of notifications you receive. This feature enhances your control over email communications and improves your overall experience.",
+      "changes": [
+        "Users can now configure their email notification preferences directly from the Notification Preferences page.",
+        "The notification center has been updated to group related notifications, minimizing clutter in your inbox.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Configurable Email Notifications",
+      "audience": "end-user",
+      "summary": "This release introduces enhancements to email notification settings, allowing users to tailor their notification preferences.",
+      "changes": [
+        "Users can configure which email notification categories they receive from Notification Preferences [DOC-07].",
+        "The notification center groups related notifications together to reduce repeated entries in the feed [DOC-20].",
+        "Administrators can view user activity in the Audit page, including the actor, action, and timestamp [DOC-11]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes are ...uced with this release.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing",
+        "feedback_sent_to_next_attempt": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes are ...uced with this release.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Draft restore",
+    "request": "Prepare an end-user release note about restoring recoverable drafts.",
+    "retrieved_source_ids": [
+      "DOC-11",
+      "DOC-08",
+      "DOC-13"
+    ],
+    "before_note": {
+      "title": "Restoration of Recoverable Drafts",
+      "audience": "end-user",
+      "summary": "We are excited to announce an enhancement that allows users to easily restore unsaved drafts after unexpected browser refreshes. This feature ensures that your work is preserved and accessible, improving your overall editing experience.",
+      "changes": [
+        "The editor now automatically restores unsaved drafts if a recoverable draft exists after a browser refresh.",
+        "Users will receive a notification indicating that a draft has been restored, ensuring clarity on their document status.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Restoring Recoverable Drafts",
+      "audience": "end-user",
+      "summary": "This release includes improvements related to the restoration of drafts.",
+      "changes": [
+        "The editor automatically restores an unsaved draft after an unexpected browser refresh when a recoverable draft exists [DOC-08].",
+        "Users can now seamlessly continue their work without losing progress due to browser issues [DOC-08].",
+        "The restoration feature enhances user experience by minimizing data loss during unexpected interruptions [DOC-08]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Health endpoint",
+    "request": "Prepare a developer release note about the service health endpoint.",
+    "retrieved_source_ids": [
+      "DOC-09",
+      "DOC-01",
+      "DOC-02"
+    ],
+    "before_note": {
+      "title": "Service Health Endpoint Release Note",
+      "audience": "developer",
+      "summary": "This release introduces a new health check endpoint for monitoring service availability.",
+      "changes": [
+        "Added a GET /health endpoint that returns HTTP 200 when the service is available.",
+        "The health endpoint is designed for service monitoring and ensures uptime visibility.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Service Health Endpoint Update",
+      "audience": "developer",
+      "summary": "This release includes updates to the service health endpoint for improved monitoring.",
+      "changes": [
+        "A GET /health endpoint returns HTTP 200 when the service is available, intended for service monitoring [DOC-09].",
+        "The reports page now supports CSV export for the currently applied filters [DOC-01].",
+        "The activity API now accepts page and page_size parameters, with a default page_size of 50 [DOC-02]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes introduced.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing",
+        "feedback_sent_to_next_attempt": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes introduced.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Project archive",
+    "request": "Prepare an end-user release note about archiving projects.",
+    "retrieved_source_ids": [
+      "DOC-10",
+      "DOC-11",
+      "DOC-13"
+    ],
+    "before_note": {
+      "title": "Project Archiving Feature Release",
+      "audience": "end-user",
+      "summary": "We are excited to introduce the new project archiving feature, allowing users to streamline their active project lists by archiving completed or inactive projects.",
+      "changes": [
+        "Users can now archive projects directly from the project actions menu.",
+        "Archived projects will no longer appear in the active-project list, making it easier to manage ongoing tasks.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Project Archiving Feature",
+      "audience": "end-user",
+      "summary": "This release introduces the ability to archive projects, enhancing project management capabilities.",
+      "changes": [
+        "Users can now archive projects directly from the project actions menu [DOC-10].",
+        "Archived projects will no longer appear in the active-project list, streamlining project visibility [DOC-10].",
+        "This feature allows for better organization and management of ongoing and completed projects [DOC-10]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes are ...uced with this feature.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing",
+        "feedback_sent_to_next_attempt": "2 validation errors for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\nbreaking\n  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value='No breaking changes are ...uced with this feature.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/bool_parsing"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Audit page",
+    "request": "Prepare an admin release note about viewing user activity.",
+    "retrieved_source_ids": [
+      "DOC-11",
+      "DOC-04",
+      "DOC-22"
+    ],
+    "before_note": {
+      "title": "User Activity Viewing Enhancement",
+      "audience": "admin",
+      "summary": "Admins can now easily view user activity on the Audit page, providing better oversight and tracking of user actions.",
+      "changes": [
+        "Introduced a new Audit page for viewing user activity.",
+        "Displayed detailed information including actor, action, and timestamp for each user activity.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "User Activity Viewing Update",
+      "audience": "admin",
+      "summary": "This release includes enhancements for viewing user activity.",
+      "changes": [
+        "Administrators can view user activity in the Audit page, including the actor, action, and timestamp. [DOC-11]",
+        "The activity API returns a next_page value when more records are available after the current page. [DOC-22]",
+        "No changes were made to mobile user functionalities in this release. [DOC-04]"
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "SDK upload",
+    "request": "Prepare a developer release note about the SDK multi-file upload helper.",
+    "retrieved_source_ids": [
+      "DOC-12",
+      "DOC-01",
+      "DOC-02"
+    ],
+    "before_note": {
+      "title": "SDK Multi-File Upload Helper Release Note",
+      "audience": "developer",
+      "summary": "We are excited to announce the addition of a new multi-file upload helper in the SDK, enhancing the file upload capabilities for developers.",
+      "changes": [
+        "Introduced a multi-file upload helper that allows uploading multiple files in a single operation.",
+        "Updated the SDK documentation to include examples and usage guidelines for the new multi-file upload feature.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "SDK Multi-File Upload Helper Release Note",
+      "audience": "developer",
+      "summary": "This release introduces enhancements to the SDK for improved file handling.",
+      "changes": [
+        "The SDK now includes a multi-file upload helper that accepts a list of file paths and uploads them as one operation. [DOC-12]",
+        "The reports page now supports CSV export for the currently applied filters. Exported files contain the filtered rows shown in the report. [DOC-01]",
+        "The activity API now accepts page and page_size parameters. The default page_size is 50 and the maximum page_size is 200. [DOC-02]"
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Developers', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Date filtering",
+    "request": "Prepare an end-user release note about report date-range filters.",
+    "retrieved_source_ids": [
+      "DOC-13",
+      "DOC-01",
+      "DOC-11"
+    ],
+    "before_note": {
+      "title": "Enhanced Date-Range Filtering for Reports",
+      "audience": "end-user",
+      "summary": "We are excited to announce the introduction of date-range filters for reports, allowing users to refine their data analysis more effectively.",
+      "changes": [
+        "Users can now filter reports by selecting a start date and an end date, enhancing the precision of data displayed.",
+        "The reports page now supports CSV export, enabling users to download the filtered results for offline analysis.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Report Date-Range Filters Update",
+      "audience": "end-user",
+      "summary": "This release introduces enhancements to the report date-range filtering functionality.",
+      "changes": [
+        "Reports now support filtering by a start date and end date, which is applied before results are displayed [DOC-13].",
+        "The reports page has been updated to allow CSV export for the currently applied filters, including the filtered rows shown in the report [DOC-01].",
+        "Users can now utilize the date-range filters to refine their report results more effectively [DOC-13]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Keyboard shortcuts",
+    "request": "Prepare an end-user release note about keyboard shortcuts.",
+    "retrieved_source_ids": [
+      "DOC-14",
+      "DOC-11",
+      "DOC-13"
+    ],
+    "before_note": {
+      "title": "Keyboard Shortcuts Update",
+      "audience": "end-user",
+      "summary": "We are excited to introduce new keyboard shortcuts to enhance your productivity and streamline your workflow.",
+      "changes": [
+        "Added keyboard shortcuts for opening search functionality.",
+        "Implemented shortcuts for saving edits quickly.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Keyboard Shortcuts Update",
+      "audience": "end-user",
+      "summary": "This release introduces new keyboard shortcuts to enhance user productivity.",
+      "changes": [
+        "Keyboard shortcuts are now available for opening search, saving edits, and moving between common navigation areas [DOC-14].",
+        "Users can utilize these shortcuts to streamline their workflow and improve efficiency [DOC-14].",
+        "The implementation of these shortcuts aims to provide a more intuitive user experience [DOC-14]."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='End Users', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  },
+  {
+    "topic": "Role descriptions",
+    "request": "Prepare an admin release note about team role descriptions.",
+    "retrieved_source_ids": [
+      "DOC-15",
+      "DOC-01",
+      "DOC-02"
+    ],
+    "before_note": {
+      "title": "Team Role Descriptions Update",
+      "audience": "admin",
+      "summary": "This release introduces enhanced visibility of team member roles with short descriptions displayed on the team page, improving clarity and organization.",
+      "changes": [
+        "The team page now displays a short role description for each member when a role description has been configured.",
+        "The reports page now supports CSV export for the currently applied filters.",
+        "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports."
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "after_note": {
+      "title": "Team Role Descriptions Update",
+      "audience": "admin",
+      "summary": "This release includes updates to the team page functionality.",
+      "changes": [
+        "The team page now displays a short role description for each member when a role description has been configured. [DOC-15]",
+        "The reports page now supports CSV export for the currently applied filters. [DOC-01]",
+        "The activity API now accepts page and page_size parameters. [DOC-02]"
+      ],
+      "breaking": false,
+      "citations": []
+    },
+    "before_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ],
+    "after_generation_trace": [
+      {
+        "attempt": 1,
+        "status": "REJECTED",
+        "validation_error": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+        "feedback_sent_to_next_attempt": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='Administrators', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+      },
+      {
+        "attempt": 2,
+        "status": "VALID",
+        "changes_count": 3
+      }
+    ]
+  }
+]

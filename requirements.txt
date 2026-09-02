@@ -1,0 +1,7 @@
+openai
+pydantic>=2,<3
+python-dotenv
+pytest
+scikit-learn
+pandas
+openpyxl

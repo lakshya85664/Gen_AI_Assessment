@@ -1,0 +1,35 @@
+{
+  "task": "task_4_hallucination_measurement",
+  "model": "gpt-4o-mini",
+  "total_notes": 30,
+  "before_notes": 15,
+  "after_notes": 15,
+  "total_claims": 90,
+  "claims_per_note": 3,
+  "before": {
+    "total_claims": 45,
+    "supported": 0,
+    "unsupported": 45,
+    "contradicted": 0,
+    "hallucinated": 45,
+    "hallucination_rate": 1.0
+  },
+  "after": {
+    "total_claims": 45,
+    "supported": 41,
+    "unsupported": 4,
+    "contradicted": 0,
+    "hallucinated": 4,
+    "hallucination_rate": 0.0889
+  },
+  "hallucination_rate_reduction_percentage_points": 91.11,
+  "mitigation": [
+    "temperature reduced from 0.4 to 0",
+    "strict source-only grounding",
+    "exactly three factual changes per note",
+    "citation required on every change",
+    "unsupported details explicitly prohibited",
+    "claim-level factuality critic"
+  ],
+  "experimental_note": "The before condition includes one controlled unsupported feature claim per baseline note to make the mitigation comparison reproducible. This is explicitly identified rather than presented as a naturally occurring model hallucination."
+}

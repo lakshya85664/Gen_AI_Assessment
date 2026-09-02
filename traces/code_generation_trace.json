@@ -1,0 +1,44 @@
+[
+  {
+    "sample": 1,
+    "passed": true,
+    "attempts": 1,
+    "repairs": 0,
+    "history": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "output": ".                                                                        [100%]\n1 passed in 0.05s"
+      }
+    ],
+    "final_code": "def normalise_phone(s) -> str | None:\n    s = s.strip()\n    if not s:\n        return None\n\n    if s.startswith(\"+44\"):\n        if len(s) == 13 and s[3:].isdigit() and len(s[3:]) == 10:\n            return s\n        return None\n\n    if s.startswith(\"+1\"):\n        if len(s) == 12 and s[2:].isdigit() and len(s[2:]) == 10:\n            return s\n        return None\n\n    s = s.replace(\" \", \"\")\n    \n    if len(s) == 11 and s[0] == '0' and s[1:].isdigit():\n        return \"+44\" + s[1:]\n\n    if len(s) == 10 and s.isdigit():\n        return \"+1\" + s\n\n    return None\n\n\ndef test_normalise_phone():\n    assert normalise_phone(\"07123 456 789\") == \"+447123456789\"\n    assert normalise_phone(\"01234 567 890\") == \"+441234567890\"\n    assert normalise_phone(\"1234567890\") == \"+11234567890\"\n    assert normalise_phone(\"+441234567890\") == \"+441234567890\"\n    assert normalise_phone(\"+11234567890\") == \"+11234567890\"\n    assert normalise_phone(\"07123 456 7890\") is None\n    assert normalise_phone(\"+4412345678901\") is None\n    assert normalise_phone(\"12345\") is None\n    assert normalise_phone(\"\") is None\n    assert normalise_phone(\"   \") is None\n    assert normalise_phone(\"invalid number\") is None"
+  },
+  {
+    "sample": 2,
+    "passed": true,
+    "attempts": 1,
+    "repairs": 0,
+    "history": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "output": ".                                                                        [100%]\n1 passed in 0.05s"
+      }
+    ],
+    "final_code": "def slugify_text(s: str) -> str:\n    import re\n    \n    # Remove apostrophes\n    s = s.replace(\"'\", \"\")\n    \n    # Replace all other punctuation with spaces\n    s = re.sub(r'[^\\w\\s]', ' ', s)\n    \n    # Convert to lowercase and strip whitespace\n    s = s.lower().strip()\n    \n    # Collapse consecutive whitespace into a single space\n    s = re.sub(r'\\s+', ' ', s)\n    \n    # Replace spaces with hyphens\n    s = s.replace(' ', '-')\n    \n    # Remove leading and trailing hyphens\n    s = s.strip('-')\n    \n    return s\n\n# Tests\ndef test_slugify_text():\n    assert slugify_text(\"Hello World\") == \"hello-world\"\n    assert slugify_text(\"It's a test\") == \"its-a-test\"\n    assert slugify_text(\"AI/ML Guide!\") == \"ai-ml-guide\"\n    assert slugify_text(\"  Hello   World  \") == \"hello-world\"\n    assert slugify_text(\"Apostrophe's Test\") == \"apostrophes-test\"\n    assert slugify_text(\"Numbers 123\") == \"numbers-123\"\n    assert slugify_text(\"\") == \"\"\n    assert slugify_text(\"   \") == \"\""
+  },
+  {
+    "sample": 3,
+    "passed": true,
+    "attempts": 1,
+    "repairs": 0,
+    "history": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "output": "..                                                                       [100%]\n2 passed in 0.05s"
+      }
+    ],
+    "final_code": "def percent_to_decimal(s) -> float:\n    s = s.strip()\n    if not s.endswith(\"%\"):\n        raise ValueError(\"Input must end with '%'\")\n    numeric_part = s[:-1].strip()\n    try:\n        value = float(numeric_part)\n    except ValueError:\n        raise ValueError(\"Invalid numeric input\")\n    if value < 0 or value > 100:\n        raise ValueError(\"Value must be between 0 and 100 inclusive\")\n    return value / 100\n\nimport pytest\n\ndef test_percent_to_decimal_valid():\n    assert percent_to_decimal(\"75%\") == 0.75\n    assert percent_to_decimal(\"50%\") == 0.50\n    assert percent_to_decimal(\"0%\") == 0.0\n    assert percent_to_decimal(\"100%\") == 1.0\n    assert percent_to_decimal(\"12.5%\") == 0.125\n    assert percent_to_decimal(\" 25 % \") == 0.25\n\ndef test_percent_to_decimal_invalid():\n    with pytest.raises(ValueError):\n        percent_to_decimal(\"75\")\n    with pytest.raises(ValueError):\n        percent_to_decimal(\"abc%\")\n    with pytest.raises(ValueError):\n        percent_to_decimal(\"-1%\")\n    with pytest.raises(ValueError):\n        percent_to_decimal(\"101%\")"
+  }
+]

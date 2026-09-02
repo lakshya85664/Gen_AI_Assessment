@@ -1,0 +1,36 @@
+{
+  "run_number": 1,
+  "max_attempts": 3,
+  "final_status": "VALID",
+  "attempts_used": 2,
+  "repair_error_fed_back_verbatim": "1 validation error for ReleaseNote\naudience\n  Input should be 'developer', 'end-user' or 'admin' [type=literal_error, input_value='customer', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error",
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "status": "REJECTED",
+      "raw_output": "{\"title\": \"CSV Export Feature for Filtered Reports\", \"audience\": \"customer\", \"summary\": \"The dashboard now includes a new feature that allows users to export filtered reports as CSV files. This enhancement enables users to apply specific filters and download only the relevant data, improving data management and reporting efficiency.\", \"changes\": [\"Introduced CSV export functionality for filtered reports.\", \"Users can now apply filters to their reports and download only the matching rows.\"], \"breaking\": false, \"citations\": []}",
+      "validation_errors": [
+        {
+          "type": "literal_error",
+          "loc": [
+            "audience"
+          ],
+          "msg": "Input should be 'developer', 'end-user' or 'admin'",
+          "input": "customer",
+          "ctx": {
+            "expected": "'developer', 'end-user' or 'admin'"
+          },
+          "url": "https://errors.pydantic.dev/2.13/v/literal_error"
+        }
+      ],
+      "injected_failure": true
+    },
+    {
+      "attempt": 2,
+      "status": "VALID",
+      "raw_output": "{\n  \"title\": \"CSV Export for Filtered Reports\",\n  \"audience\": \"end-user\",\n  \"summary\": \"The dashboard now allows users to export filtered reports in CSV format, enabling them to download only the rows that match their applied filters. This feature enhances data management and reporting efficiency.\",\n  \"changes\": [\n    \"Introduced CSV export functionality for filtered reports.\",\n    \"Users can now apply filters and download only the relevant data.\"\n  ],\n  \"breaking\": false,\n  \"citations\": []\n}",
+      "validation_errors": [],
+      "injected_failure": false
+    }
+  ]
+}

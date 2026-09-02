@@ -1,0 +1,12 @@
+{
+  "status": "REJECTED",
+  "reason": "Invented citation ID was detected.",
+  "invalid_citation": "INVENTED-999",
+  "allowed_ids": [
+    "DOC-01",
+    "DOC-13",
+    "DOC-21"
+  ],
+  "error": "Invalid citation ID(s): ['INVENTED-999']. Allowed citation IDs: ['DOC-01', 'DOC-13', 'DOC-21']",
+  "raw_output": "{\"title\": \"CSV Export for Filtered Reports\", \"audience\": \"end-user\", \"summary\": \"Users can now export the rows currently shown after report filters are applied.\", \"changes\": [\"CSV export respects the currently applied report filters. [DOC-01]\", \"The export is available from the reports page. [INVENTED-999]\"], \"breaking\": false, \"citations\": [\"DOC-01\", \"INVENTED-999\"]}"
+}

@@ -1,0 +1,335 @@
+{
+  "task": "task_3_grounding",
+  "model": "gpt-4o-mini",
+  "retriever": "TF-IDF cosine similarity",
+  "corpus_size": 24,
+  "retrieval_examples": [
+    {
+      "query": "How can users export filtered reports?",
+      "top_k": [
+        {
+          "id": "DOC-01",
+          "score": 0.4049,
+          "text": "The reports page now supports CSV export for the currently applied filters. Exported files contain the filtered rows shown in the report."
+        },
+        {
+          "id": "DOC-21",
+          "score": 0.1498,
+          "text": "The CSV export uses UTF-8 encoding and includes the column headers displayed by the report."
+        },
+        {
+          "id": "DOC-07",
+          "score": 0.1081,
+          "text": "Users can configure which email notification categories they receive from Notification Preferences."
+        }
+      ]
+    },
+    {
+      "query": "What pagination support was added to the activity API?",
+      "top_k": [
+        {
+          "id": "DOC-22",
+          "score": 0.3193,
+          "text": "The activity API returns a next_page value when more records are available after the current page."
+        },
+        {
+          "id": "DOC-02",
+          "score": 0.2114,
+          "text": "The activity API now accepts page and page_size parameters. The default page_size is 50 and the maximum page_size is 200."
+        },
+        {
+          "id": "DOC-13",
+          "score": 0.1552,
+          "text": "Reports support filtering by a start date and end date. The selected date range is applied before results are displayed."
+        }
+      ]
+    },
+    {
+      "query": "How can administrators configure session timeout?",
+      "top_k": [
+        {
+          "id": "DOC-03",
+          "score": 0.5915,
+          "text": "Administrators can configure session timeout values from 15 to 120 minutes in the security settings."
+        },
+        {
+          "id": "DOC-23",
+          "score": 0.2995,
+          "text": "Session timeout changes apply to new sessions after the administrator saves the security setting."
+        },
+        {
+          "id": "DOC-07",
+          "score": 0.1576,
+          "text": "Users can configure which email notification categories they receive from Notification Preferences."
+        }
+      ]
+    },
+    {
+      "query": "How does offline project viewing work?",
+      "top_k": [
+        {
+          "id": "DOC-04",
+          "score": 0.5906,
+          "text": "Mobile users can download selected project content for offline viewing. Changes made offline are synchronized after the device reconnects."
+        },
+        {
+          "id": "DOC-24",
+          "score": 0.3373,
+          "text": "Offline project content is read-only until the device reconnects and synchronization is completed."
+        },
+        {
+          "id": "DOC-19",
+          "score": 0.2637,
+          "text": "Workspace administrators can duplicate an existing project from the project actions menu."
+        }
+      ]
+    },
+    {
+      "query": "What changed in search phrase matching?",
+      "top_k": [
+        {
+          "id": "DOC-05",
+          "score": 0.57,
+          "text": "Search now supports exact phrase matching when a query is enclosed in quotation marks."
+        },
+        {
+          "id": "DOC-14",
+          "score": 0.1454,
+          "text": "Keyboard shortcuts are available for opening search, saving edits, and moving between common navigation areas."
+        },
+        {
+          "id": "DOC-01",
+          "score": 0.0,
+          "text": "The reports page now supports CSV export for the currently applied filters. Exported files contain the filtered rows shown in the report."
+        }
+      ]
+    }
+  ],
+  "citation_failure_demo": {
+    "status": "REJECTED",
+    "reason": "Invented citation ID was detected.",
+    "invalid_citation": "INVENTED-999",
+    "allowed_ids": [
+      "DOC-01",
+      "DOC-13",
+      "DOC-21"
+    ],
+    "error": "Invalid citation ID(s): ['INVENTED-999']. Allowed citation IDs: ['DOC-01', 'DOC-13', 'DOC-21']",
+    "raw_output": "{\"title\": \"CSV Export for Filtered Reports\", \"audience\": \"end-user\", \"summary\": \"Users can now export the rows currently shown after report filters are applied.\", \"changes\": [\"CSV export respects the currently applied report filters. [DOC-01]\", \"The export is available from the reports page. [INVENTED-999]\"], \"breaking\": false, \"citations\": [\"DOC-01\", \"INVENTED-999\"]}"
+  },
+  "grounded_notes": [
+    {
+      "request": "Announce the filtered CSV export feature for report users.",
+      "retrieved_chunks": [
+        {
+          "id": "DOC-01",
+          "score": 0.4724,
+          "text": "The reports page now supports CSV export for the currently applied filters. Exported files contain the filtered rows shown in the report."
+        },
+        {
+          "id": "DOC-21",
+          "score": 0.4017,
+          "text": "The CSV export uses UTF-8 encoding and includes the column headers displayed by the report."
+        },
+        {
+          "id": "DOC-07",
+          "score": 0.0966,
+          "text": "Users can configure which email notification categories they receive from Notification Preferences."
+        }
+      ],
+      "note": {
+        "title": "Filtered CSV Export Feature",
+        "audience": "end-user",
+        "summary": "Users can now export reports in CSV format with the currently applied filters.",
+        "changes": [
+          "The reports page now supports CSV export for the currently applied filters, containing the filtered rows shown in the report [DOC-01].",
+          "The CSV export uses UTF-8 encoding and includes the column headers displayed by the report [DOC-21]."
+        ],
+        "breaking": false,
+        "citations": [
+          "DOC-01",
+          "DOC-21"
+        ]
+      },
+      "validation_trace": [
+        {
+          "attempt": 1,
+          "status": "VALID",
+          "raw_output": "{\n  \"title\": \"Filtered CSV Export Feature\",\n  \"audience\": \"end-user\",\n  \"summary\": \"Users can now export reports in CSV format with the currently applied filters.\",\n  \"changes\": [\n    \"The reports page now supports CSV export for the currently applied filters, containing the filtered rows shown in the report [DOC-01].\",\n    \"The CSV export uses UTF-8 encoding and includes the column headers displayed by the report [DOC-21].\"\n  ],\n  \"breaking\": false,\n  \"citations\": [\"DOC-01\", \"DOC-21\"]\n}"
+        }
+      ]
+    },
+    {
+      "request": "Announce the new activity API pagination support for developers.",
+      "retrieved_chunks": [
+        {
+          "id": "DOC-22",
+          "score": 0.2664,
+          "text": "The activity API returns a next_page value when more records are available after the current page."
+        },
+        {
+          "id": "DOC-23",
+          "score": 0.1824,
+          "text": "Session timeout changes apply to new sessions after the administrator saves the security setting."
+        },
+        {
+          "id": "DOC-02",
+          "score": 0.1764,
+          "text": "The activity API now accepts page and page_size parameters. The default page_size is 50 and the maximum page_size is 200."
+        }
+      ],
+      "note": {
+        "title": "New Activity API Pagination Support",
+        "audience": "developer",
+        "summary": "The Activity API now supports pagination, allowing developers to retrieve records in a more efficient manner.",
+        "changes": [
+          "The activity API now accepts page and page_size parameters, with a default page_size of 50 and a maximum of 200 [DOC-02].",
+          "The activity API returns a next_page value when more records are available after the current page [DOC-22]."
+        ],
+        "breaking": false,
+        "citations": [
+          "DOC-22",
+          "DOC-02"
+        ]
+      },
+      "validation_trace": [
+        {
+          "attempt": 1,
+          "status": "VALID",
+          "raw_output": "{\n  \"title\": \"New Activity API Pagination Support\",\n  \"audience\": \"developer\",\n  \"summary\": \"The Activity API now supports pagination, allowing developers to retrieve records in a more efficient manner.\",\n  \"changes\": [\n    \"The activity API now accepts page and page_size parameters, with a default page_size of 50 and a maximum of 200 [DOC-02].\",\n    \"The activity API returns a next_page value when more records are available after the current page [DOC-22].\"\n  ],\n  \"breaking\": false,\n  \"citations\": [\"DOC-22\", \"DOC-02\"]\n}"
+        }
+      ]
+    },
+    {
+      "request": "Announce configurable session timeout for administrators.",
+      "retrieved_chunks": [
+        {
+          "id": "DOC-03",
+          "score": 0.5083,
+          "text": "Administrators can configure session timeout values from 15 to 120 minutes in the security settings."
+        },
+        {
+          "id": "DOC-23",
+          "score": 0.3485,
+          "text": "Session timeout changes apply to new sessions after the administrator saves the security setting."
+        },
+        {
+          "id": "DOC-19",
+          "score": 0.1595,
+          "text": "Workspace administrators can duplicate an existing project from the project actions menu."
+        }
+      ],
+      "note": {
+        "title": "Configurable Session Timeout for Administrators",
+        "audience": "admin",
+        "summary": "Administrators can now configure session timeout values to enhance security settings.",
+        "changes": [
+          "Administrators can configure session timeout values from 15 to 120 minutes in the security settings [DOC-03].",
+          "Session timeout changes apply to new sessions after the administrator saves the security setting [DOC-23]."
+        ],
+        "breaking": false,
+        "citations": [
+          "DOC-03",
+          "DOC-23"
+        ]
+      },
+      "validation_trace": [
+        {
+          "attempt": 1,
+          "status": "VALID",
+          "raw_output": "{\n  \"title\": \"Configurable Session Timeout for Administrators\",\n  \"audience\": \"admin\",\n  \"summary\": \"Administrators can now configure session timeout values to enhance security settings.\",\n  \"changes\": [\n    \"Administrators can configure session timeout values from 15 to 120 minutes in the security settings [DOC-03].\",\n    \"Session timeout changes apply to new sessions after the administrator saves the security setting [DOC-23].\"\n  ],\n  \"breaking\": false,\n  \"citations\": [\"DOC-03\", \"DOC-23\"]\n}"
+        }
+      ]
+    },
+    {
+      "request": "Announce offline project viewing for mobile end-users.",
+      "retrieved_chunks": [
+        {
+          "id": "DOC-04",
+          "score": 0.6111,
+          "text": "Mobile users can download selected project content for offline viewing. Changes made offline are synchronized after the device reconnects."
+        },
+        {
+          "id": "DOC-24",
+          "score": 0.2331,
+          "text": "Offline project content is read-only until the device reconnects and synchronization is completed."
+        },
+        {
+          "id": "DOC-19",
+          "score": 0.1823,
+          "text": "Workspace administrators can duplicate an existing project from the project actions menu."
+        }
+      ],
+      "note": {
+        "title": "Offline Project Viewing for Mobile End-Users",
+        "audience": "end-user",
+        "summary": "Mobile users can now download selected project content for offline viewing, enhancing accessibility and usability.",
+        "changes": [
+          "Mobile users can download selected project content for offline viewing [DOC-04].",
+          "Offline project content is read-only until the device reconnects and synchronization is completed [DOC-24]."
+        ],
+        "breaking": false,
+        "citations": [
+          "DOC-04",
+          "DOC-24"
+        ]
+      },
+      "validation_trace": [
+        {
+          "attempt": 1,
+          "status": "VALID",
+          "raw_output": "{\n  \"title\": \"Offline Project Viewing for Mobile End-Users\",\n  \"audience\": \"end-user\",\n  \"summary\": \"Mobile users can now download selected project content for offline viewing, enhancing accessibility and usability.\",\n  \"changes\": [\n    \"Mobile users can download selected project content for offline viewing [DOC-04].\",\n    \"Offline project content is read-only until the device reconnects and synchronization is completed [DOC-24].\"\n  ],\n  \"breaking\": false,\n  \"citations\": [\"DOC-04\", \"DOC-24\"]\n}"
+        }
+      ]
+    },
+    {
+      "request": "Announce exact phrase matching in search for end-users.",
+      "retrieved_chunks": [
+        {
+          "id": "DOC-05",
+          "score": 0.5598,
+          "text": "Search now supports exact phrase matching when a query is enclosed in quotation marks."
+        },
+        {
+          "id": "DOC-14",
+          "score": 0.105,
+          "text": "Keyboard shortcuts are available for opening search, saving edits, and moving between common navigation areas."
+        },
+        {
+          "id": "DOC-13",
+          "score": 0.1017,
+          "text": "Reports support filtering by a start date and end date. The selected date range is applied before results are displayed."
+        }
+      ],
+      "note": {
+        "title": "Exact Phrase Matching in Search",
+        "audience": "end-user",
+        "summary": "Search functionality has been enhanced to support exact phrase matching.",
+        "changes": [
+          "Search now supports exact phrase matching when a query is enclosed in quotation marks [DOC-05].",
+          "Keyboard shortcuts are available for opening search, saving edits, and moving between common navigation areas [DOC-14]."
+        ],
+        "breaking": false,
+        "citations": [
+          "DOC-05",
+          "DOC-14"
+        ]
+      },
+      "validation_trace": [
+        {
+          "attempt": 1,
+          "status": "REJECTED",
+          "raw_output": "{\n  \"title\": \"Exact Phrase Matching in Search\",\n  \"audience\": \"end-user\",\n  \"summary\": \"Search functionality now includes support for exact phrase matching.\",\n  \"changes\": [\n    \"Search now supports exact phrase matching when a query is enclosed in quotation marks [DOC-05].\"\n  ],\n  \"breaking\": false,\n  \"citations\": [\"DOC-05\"]\n}",
+          "validation_error": "1 validation error for GroundedReleaseNote\nchanges\n  List should have at least 2 items after validation, not 1 [type=too_short, input_value=['Search now supports exa...tation marks [DOC-05].'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.13/v/too_short",
+          "feedback_sent_verbatim": "1 validation error for GroundedReleaseNote\nchanges\n  List should have at least 2 items after validation, not 1 [type=too_short, input_value=['Search now supports exa...tation marks [DOC-05].'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.13/v/too_short"
+        },
+        {
+          "attempt": 2,
+          "status": "VALID",
+          "raw_output": "{\n  \"title\": \"Exact Phrase Matching in Search\",\n  \"audience\": \"end-user\",\n  \"summary\": \"Search functionality has been enhanced to support exact phrase matching.\",\n  \"changes\": [\n    \"Search now supports exact phrase matching when a query is enclosed in quotation marks [DOC-05].\",\n    \"Keyboard shortcuts are available for opening search, saving edits, and moving between common navigation areas [DOC-14].\"\n  ],\n  \"breaking\": false,\n  \"citations\": [\"DOC-05\", \"DOC-14\"]\n}"
+        }
+      ]
+    }
+  ],
+  "all_generated_notes_valid": true
+}

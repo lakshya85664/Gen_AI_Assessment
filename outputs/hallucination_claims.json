@@ -1,0 +1,812 @@
+[
+  {
+    "note_id": 1,
+    "claim_id": "N01-C01",
+    "mode": "before",
+    "claim": "The reports page now supports CSV export for the currently applied filters.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 1,
+    "claim_id": "N01-C02",
+    "mode": "before",
+    "claim": "Exported files are encoded in UTF-8 and include the column headers displayed by the report.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 1,
+    "claim_id": "N01-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 16,
+    "claim_id": "N16-C01",
+    "mode": "after",
+    "claim": "The reports page now supports CSV export for the currently applied filters, including only the filtered rows shown in the report [DOC-01].",
+    "citation_ids": "DOC-01",
+    "label": "supported",
+    "reason": "DOC-01: The source states that the reports page supports CSV export for the currently applied filters and that the exported files contain the filtered rows shown in the report."
+  },
+  {
+    "note_id": 16,
+    "claim_id": "N16-C02",
+    "mode": "after",
+    "claim": "The CSV export uses UTF-8 encoding and includes the column headers displayed by the report [DOC-21].",
+    "citation_ids": "DOC-21",
+    "label": "supported",
+    "reason": "DOC-21: The source explicitly states that the CSV export uses UTF-8 encoding and includes the column headers displayed by the report."
+  },
+  {
+    "note_id": 16,
+    "claim_id": "N16-C03",
+    "mode": "after",
+    "claim": "Reports support filtering by a start date and end date, with the selected date range applied before results are displayed [DOC-13].",
+    "citation_ids": "DOC-13",
+    "label": "supported",
+    "reason": "DOC-13: The source directly states that reports support filtering by a start date and end date, and that the selected date range is applied before results are displayed."
+  },
+  {
+    "note_id": 2,
+    "claim_id": "N02-C01",
+    "mode": "before",
+    "claim": "The Activity API now accepts 'page' and 'page_size' parameters for pagination.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 2,
+    "claim_id": "N02-C02",
+    "mode": "before",
+    "claim": "A default 'page_size' of 50 is set, with a maximum limit of 200.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 2,
+    "claim_id": "N02-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 17,
+    "claim_id": "N17-C01",
+    "mode": "after",
+    "claim": "The activity API now accepts page and page_size parameters, with a default page_size of 50 and a maximum of 200 [DOC-02].",
+    "citation_ids": "DOC-02",
+    "label": "supported",
+    "reason": "DOC-02: The source confirms that the activity API accepts page and page_size parameters, and specifies the default and maximum page_size values."
+  },
+  {
+    "note_id": 17,
+    "claim_id": "N17-C02",
+    "mode": "after",
+    "claim": "The activity API returns a next_page value when more records are available after the current page [DOC-22].",
+    "citation_ids": "DOC-22",
+    "label": "supported",
+    "reason": "DOC-22: The source explicitly states that the activity API returns a next_page value when more records are available, which directly supports the claim."
+  },
+  {
+    "note_id": 17,
+    "claim_id": "N17-C03",
+    "mode": "after",
+    "claim": "Reports can now filter results by a specified start date and end date [DOC-13].",
+    "citation_ids": "DOC-13",
+    "label": "supported",
+    "reason": "DOC-13: The source states that reports support filtering by a start date and end date, which aligns with the claim."
+  },
+  {
+    "note_id": 3,
+    "claim_id": "N03-C01",
+    "mode": "before",
+    "claim": "Session timeout values can now be configured from 15 to 120 minutes in the security settings.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 3,
+    "claim_id": "N03-C02",
+    "mode": "before",
+    "claim": "Changes to session timeout settings will apply to all new sessions after saving the configuration.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 3,
+    "claim_id": "N03-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 18,
+    "claim_id": "N18-C01",
+    "mode": "after",
+    "claim": "Administrators can configure session timeout values from 15 to 120 minutes in the security settings. [DOC-03]",
+    "citation_ids": "DOC-03",
+    "label": "supported",
+    "reason": "DOC-03: The source states that administrators can configure session timeout values from 15 to 120 minutes in the security settings, which directly matches the claim."
+  },
+  {
+    "note_id": 18,
+    "claim_id": "N18-C02",
+    "mode": "after",
+    "claim": "Session timeout changes apply to new sessions after the administrator saves the security setting. [DOC-23]",
+    "citation_ids": "DOC-23",
+    "label": "supported",
+    "reason": "DOC-23: The source explicitly states that session timeout changes apply to new sessions after the administrator saves the security setting."
+  },
+  {
+    "note_id": 18,
+    "claim_id": "N18-C03",
+    "mode": "after",
+    "claim": "The reports page now supports CSV export for the currently applied filters. [DOC-01]",
+    "citation_ids": "DOC-01",
+    "label": "supported",
+    "reason": "DOC-01: The source states that the reports page supports CSV export for the currently applied filters, which matches the claim."
+  },
+  {
+    "note_id": 4,
+    "claim_id": "N04-C01",
+    "mode": "before",
+    "claim": "Mobile users can now download selected project content for offline viewing.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 4,
+    "claim_id": "N04-C02",
+    "mode": "before",
+    "claim": "Offline project content is read-only until the device reconnects and synchronization is completed.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 4,
+    "claim_id": "N04-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 19,
+    "claim_id": "N19-C01",
+    "mode": "after",
+    "claim": "Mobile users can download selected project content for offline viewing [DOC-04].",
+    "citation_ids": "DOC-04",
+    "label": "supported",
+    "reason": "DOC-04: The source states that mobile users can download selected project content for offline viewing."
+  },
+  {
+    "note_id": 19,
+    "claim_id": "N19-C02",
+    "mode": "after",
+    "claim": "Offline project content is read-only until the device reconnects and synchronization is completed [DOC-24].",
+    "citation_ids": "DOC-24",
+    "label": "supported",
+    "reason": "DOC-24: The source states that offline project content is read-only until the device reconnects and synchronization is completed, which directly matches the claim."
+  },
+  {
+    "note_id": 19,
+    "claim_id": "N19-C03",
+    "mode": "after",
+    "claim": "Changes made offline are synchronized after the device reconnects [DOC-04].",
+    "citation_ids": "DOC-04",
+    "label": "supported",
+    "reason": "DOC-04: The source explicitly states that changes made offline are synchronized after the device reconnects."
+  },
+  {
+    "note_id": 5,
+    "claim_id": "N05-C01",
+    "mode": "before",
+    "claim": "Search now supports exact phrase matching when a query is enclosed in quotation marks.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 5,
+    "claim_id": "N05-C02",
+    "mode": "before",
+    "claim": "Improved search accuracy for queries with multiple words.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 5,
+    "claim_id": "N05-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 20,
+    "claim_id": "N20-C01",
+    "mode": "after",
+    "claim": "Search now supports exact phrase matching when a query is enclosed in quotation marks [DOC-05].",
+    "citation_ids": "DOC-05",
+    "label": "supported",
+    "reason": "DOC-05: The source states that Search now supports exact phrase matching when a query is enclosed in quotation marks, which directly aligns with the claim."
+  },
+  {
+    "note_id": 20,
+    "claim_id": "N20-C02",
+    "mode": "after",
+    "claim": "Administrators can view user activity in the Audit page, including the actor, action, and timestamp [DOC-11].",
+    "citation_ids": "DOC-11",
+    "label": "supported",
+    "reason": "DOC-11: The source states that administrators can view user activity in the Audit page, which directly matches the claim."
+  },
+  {
+    "note_id": 20,
+    "claim_id": "N20-C03",
+    "mode": "after",
+    "claim": "Keyboard shortcuts are available for opening search, saving edits, and moving between common navigation areas [DOC-14].",
+    "citation_ids": "DOC-14",
+    "label": "supported",
+    "reason": "DOC-14: The source states that keyboard shortcuts are available for the specified functions, which directly supports the claim."
+  },
+  {
+    "note_id": 6,
+    "claim_id": "N06-C01",
+    "mode": "before",
+    "claim": "Billing users can now download their monthly invoices as PDF files.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 6,
+    "claim_id": "N06-C02",
+    "mode": "before",
+    "claim": "The download option is accessible from the billing history page for improved user experience.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 6,
+    "claim_id": "N06-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 21,
+    "claim_id": "N21-C01",
+    "mode": "after",
+    "claim": "Billing users can now download monthly invoices as PDF files from the billing history page [DOC-06].",
+    "citation_ids": "DOC-06",
+    "label": "supported",
+    "reason": "DOC-06: The source states that billing users can download monthly invoices as PDF files from the billing history page, which aligns with the claim."
+  },
+  {
+    "note_id": 21,
+    "claim_id": "N21-C02",
+    "mode": "after",
+    "claim": "The feature enhances user experience by providing easy access to billing documents [DOC-06].",
+    "citation_ids": "DOC-06",
+    "label": "unsupported",
+    "reason": "DOC-06: The source states that users can download invoices, but it does not provide evidence that this feature enhances user experience."
+  },
+  {
+    "note_id": 21,
+    "claim_id": "N21-C03",
+    "mode": "after",
+    "claim": "Users can retrieve their invoices for better financial tracking and record-keeping [DOC-06].",
+    "citation_ids": "DOC-06",
+    "label": "supported",
+    "reason": "DOC-06: The source states that users can download monthly invoices, which supports the claim about retrieving invoices for financial tracking and record-keeping."
+  },
+  {
+    "note_id": 7,
+    "claim_id": "N07-C01",
+    "mode": "before",
+    "claim": "Users can now configure their email notification preferences directly from the Notification Preferences page.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 7,
+    "claim_id": "N07-C02",
+    "mode": "before",
+    "claim": "The notification center has been updated to group related notifications, minimizing clutter in your inbox.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 7,
+    "claim_id": "N07-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 22,
+    "claim_id": "N22-C01",
+    "mode": "after",
+    "claim": "Users can configure which email notification categories they receive from Notification Preferences [DOC-07].",
+    "citation_ids": "DOC-07",
+    "label": "supported",
+    "reason": "DOC-07: The source states that users can configure email notification categories from Notification Preferences, which directly supports the claim."
+  },
+  {
+    "note_id": 22,
+    "claim_id": "N22-C02",
+    "mode": "after",
+    "claim": "The notification center groups related notifications together to reduce repeated entries in the feed [DOC-20].",
+    "citation_ids": "DOC-20",
+    "label": "supported",
+    "reason": "DOC-20: The source states that the notification center groups related notifications together to reduce repeated entries, which directly supports the claim."
+  },
+  {
+    "note_id": 22,
+    "claim_id": "N22-C03",
+    "mode": "after",
+    "claim": "Administrators can view user activity in the Audit page, including the actor, action, and timestamp [DOC-11].",
+    "citation_ids": "DOC-11",
+    "label": "supported",
+    "reason": "DOC-11: The source states that administrators can view user activity in the Audit page, which directly supports the claim."
+  },
+  {
+    "note_id": 8,
+    "claim_id": "N08-C01",
+    "mode": "before",
+    "claim": "The editor now automatically restores unsaved drafts if a recoverable draft exists after a browser refresh.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 8,
+    "claim_id": "N08-C02",
+    "mode": "before",
+    "claim": "Users will receive a notification indicating that a draft has been restored, ensuring clarity on their document status.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 8,
+    "claim_id": "N08-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 23,
+    "claim_id": "N23-C01",
+    "mode": "after",
+    "claim": "The editor automatically restores an unsaved draft after an unexpected browser refresh when a recoverable draft exists [DOC-08].",
+    "citation_ids": "DOC-08",
+    "label": "supported",
+    "reason": "DOC-08: The source explicitly states that the editor restores an unsaved draft after an unexpected browser refresh when a recoverable draft exists."
+  },
+  {
+    "note_id": 23,
+    "claim_id": "N23-C02",
+    "mode": "after",
+    "claim": "Users can now seamlessly continue their work without losing progress due to browser issues [DOC-08].",
+    "citation_ids": "DOC-08",
+    "label": "supported",
+    "reason": "DOC-08: The source states that an unsaved draft is automatically restored after a browser refresh, which implies users can continue their work without losing progress."
+  },
+  {
+    "note_id": 23,
+    "claim_id": "N23-C03",
+    "mode": "after",
+    "claim": "The restoration feature enhances user experience by minimizing data loss during unexpected interruptions [DOC-08].",
+    "citation_ids": "DOC-08",
+    "label": "supported",
+    "reason": "DOC-08: The source states that the editor restores an unsaved draft after an unexpected browser refresh, which directly supports the claim about minimizing data loss and enhancing user experience."
+  },
+  {
+    "note_id": 9,
+    "claim_id": "N09-C01",
+    "mode": "before",
+    "claim": "Added a GET /health endpoint that returns HTTP 200 when the service is available.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 9,
+    "claim_id": "N09-C02",
+    "mode": "before",
+    "claim": "The health endpoint is designed for service monitoring and ensures uptime visibility.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 9,
+    "claim_id": "N09-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 24,
+    "claim_id": "N24-C01",
+    "mode": "after",
+    "claim": "A GET /health endpoint returns HTTP 200 when the service is available, intended for service monitoring [DOC-09].",
+    "citation_ids": "DOC-09",
+    "label": "supported",
+    "reason": "DOC-09: The source states that a GET /health endpoint returns HTTP 200 when the service is available and is intended for service monitoring, which directly supports the claim."
+  },
+  {
+    "note_id": 24,
+    "claim_id": "N24-C02",
+    "mode": "after",
+    "claim": "The reports page now supports CSV export for the currently applied filters [DOC-01].",
+    "citation_ids": "DOC-01",
+    "label": "supported",
+    "reason": "DOC-01: The source states that the reports page supports CSV export for the currently applied filters, which directly matches the claim."
+  },
+  {
+    "note_id": 24,
+    "claim_id": "N24-C03",
+    "mode": "after",
+    "claim": "The activity API now accepts page and page_size parameters, with a default page_size of 50 [DOC-02].",
+    "citation_ids": "DOC-02",
+    "label": "supported",
+    "reason": "DOC-02: The source confirms that the activity API accepts page and page_size parameters and specifies the default page_size as 50."
+  },
+  {
+    "note_id": 10,
+    "claim_id": "N10-C01",
+    "mode": "before",
+    "claim": "Users can now archive projects directly from the project actions menu.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 10,
+    "claim_id": "N10-C02",
+    "mode": "before",
+    "claim": "Archived projects will no longer appear in the active-project list, making it easier to manage ongoing tasks.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 10,
+    "claim_id": "N10-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 25,
+    "claim_id": "N25-C01",
+    "mode": "after",
+    "claim": "Users can now archive projects directly from the project actions menu [DOC-10].",
+    "citation_ids": "DOC-10",
+    "label": "supported",
+    "reason": "DOC-10: The source states that projects can be archived from the project actions menu, which directly supports the claim."
+  },
+  {
+    "note_id": 25,
+    "claim_id": "N25-C02",
+    "mode": "after",
+    "claim": "Archived projects will no longer appear in the active-project list, streamlining project visibility [DOC-10].",
+    "citation_ids": "DOC-10",
+    "label": "supported",
+    "reason": "DOC-10: The source states that archived projects are removed from the active-project list, which supports the claim that they will no longer appear in that list."
+  },
+  {
+    "note_id": 25,
+    "claim_id": "N25-C03",
+    "mode": "after",
+    "claim": "This feature allows for better organization and management of ongoing and completed projects [DOC-10].",
+    "citation_ids": "DOC-10",
+    "label": "unsupported",
+    "reason": "DOC-10: The source describes the archiving process but does not provide evidence that it improves organization and management."
+  },
+  {
+    "note_id": 11,
+    "claim_id": "N11-C01",
+    "mode": "before",
+    "claim": "Introduced a new Audit page for viewing user activity.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 11,
+    "claim_id": "N11-C02",
+    "mode": "before",
+    "claim": "Displayed detailed information including actor, action, and timestamp for each user activity.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 11,
+    "claim_id": "N11-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 26,
+    "claim_id": "N26-C01",
+    "mode": "after",
+    "claim": "Administrators can view user activity in the Audit page, including the actor, action, and timestamp. [DOC-11]",
+    "citation_ids": "DOC-11",
+    "label": "supported",
+    "reason": "DOC-11: The source explicitly states that administrators can view user activity in the Audit page, including the actor, action, and timestamp, which matches the claim."
+  },
+  {
+    "note_id": 26,
+    "claim_id": "N26-C02",
+    "mode": "after",
+    "claim": "The activity API returns a next_page value when more records are available after the current page. [DOC-22]",
+    "citation_ids": "DOC-22",
+    "label": "supported",
+    "reason": "DOC-22: The source explicitly states that the activity API returns a next_page value when more records are available after the current page, which matches the claim."
+  },
+  {
+    "note_id": 26,
+    "claim_id": "N26-C03",
+    "mode": "after",
+    "claim": "No changes were made to mobile user functionalities in this release. [DOC-04]",
+    "citation_ids": "DOC-04",
+    "label": "unsupported",
+    "reason": "DOC-04: The source discusses offline viewing and synchronization but does not address whether any changes were made to mobile user functionalities."
+  },
+  {
+    "note_id": 12,
+    "claim_id": "N12-C01",
+    "mode": "before",
+    "claim": "Introduced a multi-file upload helper that allows uploading multiple files in a single operation.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 12,
+    "claim_id": "N12-C02",
+    "mode": "before",
+    "claim": "Updated the SDK documentation to include examples and usage guidelines for the new multi-file upload feature.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 12,
+    "claim_id": "N12-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 27,
+    "claim_id": "N27-C01",
+    "mode": "after",
+    "claim": "The SDK now includes a multi-file upload helper that accepts a list of file paths and uploads them as one operation. [DOC-12]",
+    "citation_ids": "DOC-12",
+    "label": "supported",
+    "reason": "DOC-12: The source explicitly states that the SDK includes a multi-file upload helper that accepts a list of file paths and uploads them as one operation."
+  },
+  {
+    "note_id": 27,
+    "claim_id": "N27-C02",
+    "mode": "after",
+    "claim": "The reports page now supports CSV export for the currently applied filters. Exported files contain the filtered rows shown in the report. [DOC-01]",
+    "citation_ids": "DOC-01",
+    "label": "supported",
+    "reason": "DOC-01: The source explicitly states that the reports page supports CSV export for the currently applied filters and describes the content of the exported files."
+  },
+  {
+    "note_id": 27,
+    "claim_id": "N27-C03",
+    "mode": "after",
+    "claim": "The activity API now accepts page and page_size parameters. The default page_size is 50 and the maximum page_size is 200. [DOC-02]",
+    "citation_ids": "DOC-02",
+    "label": "supported",
+    "reason": "DOC-02: The source explicitly states that the activity API accepts page and page_size parameters, and it provides the default and maximum page_size values."
+  },
+  {
+    "note_id": 13,
+    "claim_id": "N13-C01",
+    "mode": "before",
+    "claim": "Users can now filter reports by selecting a start date and an end date, enhancing the precision of data displayed.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 13,
+    "claim_id": "N13-C02",
+    "mode": "before",
+    "claim": "The reports page now supports CSV export, enabling users to download the filtered results for offline analysis.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 13,
+    "claim_id": "N13-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 28,
+    "claim_id": "N28-C01",
+    "mode": "after",
+    "claim": "Reports now support filtering by a start date and end date, which is applied before results are displayed [DOC-13].",
+    "citation_ids": "DOC-13",
+    "label": "supported",
+    "reason": "DOC-13: The source states that reports support filtering by a start date and end date, which aligns with the claim."
+  },
+  {
+    "note_id": 28,
+    "claim_id": "N28-C02",
+    "mode": "after",
+    "claim": "The reports page has been updated to allow CSV export for the currently applied filters, including the filtered rows shown in the report [DOC-01].",
+    "citation_ids": "DOC-01",
+    "label": "supported",
+    "reason": "DOC-01: The source states that the reports page now supports CSV export for the currently applied filters, which aligns with the claim."
+  },
+  {
+    "note_id": 28,
+    "claim_id": "N28-C03",
+    "mode": "after",
+    "claim": "Users can now utilize the date-range filters to refine their report results more effectively [DOC-13].",
+    "citation_ids": "DOC-13",
+    "label": "supported",
+    "reason": "DOC-13: The source states that reports support filtering by a start date and end date, which aligns with the claim about users utilizing date-range filters."
+  },
+  {
+    "note_id": 14,
+    "claim_id": "N14-C01",
+    "mode": "before",
+    "claim": "Added keyboard shortcuts for opening search functionality.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 14,
+    "claim_id": "N14-C02",
+    "mode": "before",
+    "claim": "Implemented shortcuts for saving edits quickly.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 14,
+    "claim_id": "N14-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 29,
+    "claim_id": "N29-C01",
+    "mode": "after",
+    "claim": "Keyboard shortcuts are now available for opening search, saving edits, and moving between common navigation areas [DOC-14].",
+    "citation_ids": "DOC-14",
+    "label": "supported",
+    "reason": "DOC-14: The source states that keyboard shortcuts are available for the specified actions, which aligns with the claim."
+  },
+  {
+    "note_id": 29,
+    "claim_id": "N29-C02",
+    "mode": "after",
+    "claim": "Users can utilize these shortcuts to streamline their workflow and improve efficiency [DOC-14].",
+    "citation_ids": "DOC-14",
+    "label": "supported",
+    "reason": "DOC-14: The source states that keyboard shortcuts are available for various tasks, implying that they can help users streamline their workflow."
+  },
+  {
+    "note_id": 29,
+    "claim_id": "N29-C03",
+    "mode": "after",
+    "claim": "The implementation of these shortcuts aims to provide a more intuitive user experience [DOC-14].",
+    "citation_ids": "DOC-14",
+    "label": "unsupported",
+    "reason": "DOC-14: The source describes the availability of keyboard shortcuts but does not provide evidence that their implementation aims to enhance user experience."
+  },
+  {
+    "note_id": 15,
+    "claim_id": "N15-C01",
+    "mode": "before",
+    "claim": "The team page now displays a short role description for each member when a role description has been configured.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 15,
+    "claim_id": "N15-C02",
+    "mode": "before",
+    "claim": "The reports page now supports CSV export for the currently applied filters.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 15,
+    "claim_id": "N15-C03",
+    "mode": "before",
+    "claim": "The release also adds a premium analytics dashboard with real-time charts and automatic weekly reports.",
+    "citation_ids": "",
+    "label": "unsupported",
+    "reason": "No citation attached to claim."
+  },
+  {
+    "note_id": 30,
+    "claim_id": "N30-C01",
+    "mode": "after",
+    "claim": "The team page now displays a short role description for each member when a role description has been configured. [DOC-15]",
+    "citation_ids": "DOC-15",
+    "label": "supported",
+    "reason": "DOC-15: The source states that the team page displays a short role description for each member when configured, which matches the claim."
+  },
+  {
+    "note_id": 30,
+    "claim_id": "N30-C02",
+    "mode": "after",
+    "claim": "The reports page now supports CSV export for the currently applied filters. [DOC-01]",
+    "citation_ids": "DOC-01",
+    "label": "supported",
+    "reason": "DOC-01: The source states that the reports page supports CSV export for the currently applied filters, which matches the claim."
+  },
+  {
+    "note_id": 30,
+    "claim_id": "N30-C03",
+    "mode": "after",
+    "claim": "The activity API now accepts page and page_size parameters. [DOC-02]",
+    "citation_ids": "DOC-02",
+    "label": "supported",
+    "reason": "DOC-02: The source states that the activity API now accepts page and page_size parameters, which directly supports the claim."
+  }
+]

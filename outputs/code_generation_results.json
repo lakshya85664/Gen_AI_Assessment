@@ -1,0 +1,20 @@
+[
+  {
+    "sample": 1,
+    "passed": true,
+    "attempts": 1,
+    "repairs": 0
+  },
+  {
+    "sample": 2,
+    "passed": true,
+    "attempts": 1,
+    "repairs": 0
+  },
+  {
+    "sample": 3,
+    "passed": true,
+    "attempts": 1,
+    "repairs": 0
+  }
+]

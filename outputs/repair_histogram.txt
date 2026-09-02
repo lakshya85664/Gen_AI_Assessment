@@ -1,0 +1,5 @@
+=== TASK 2 ATTEMPT HISTOGRAM ===
+1 attempt : 24
+2 attempts: 6
+3 attempts: 0
+Total     : 30
